@@ -155,7 +155,15 @@ MonoBehaviour:
   objects:
   - prefab: {fileID: 5453303089498643571, guid: 585d42358b6a10b4fbed142b0453ff61, type: 3}
     spawnChance: 0.2
+  - prefab: {fileID: 5453303089498643571, guid: 585d42358b6a10b4fbed142b0453ff61, type: 3}
+    spawnChance: 0.18
+  - prefab: {fileID: 5453303089498643571, guid: 585d42358b6a10b4fbed142b0453ff61, type: 3}
+    spawnChance: 0.16
   - prefab: {fileID: 1617087036777265321, guid: 51eca11ce513ed9468ea5c7d0d5d84f9, type: 3}
+    spawnChance: 0.14
+  - prefab: {fileID: 1617087036777265321, guid: 51eca11ce513ed9468ea5c7d0d5d84f9, type: 3}
+    spawnChance: 0.12
+  - prefab: {fileID: 1738767022218620142, guid: 7fdd23f6dedd40d44b45bf748a8c002f, type: 3}
     spawnChance: 0.1
   - prefab: {fileID: 1738767022218620142, guid: 7fdd23f6dedd40d44b45bf748a8c002f, type: 3}
     spawnChance: 0.05
@@ -216,7 +224,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 0.2, z: 1}
-  m_Center: {x: 0, y: -0.41, z: 0}
+  m_Center: {x: 0, y: -0.39, z: 0}
 --- !u!4 &391099946
 Transform:
   m_ObjectHideFlags: 0
@@ -364,8 +372,8 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 3
-  m_Radius: 1.44
+  m_Height: 0
+  m_Radius: 1.15
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
@@ -383,8 +391,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf10cc9d8fe24a8438c7fb26141a23d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravity: 45
-  jumpForce: 25
+  gravity: 40
+  jumpForce: 18
 --- !u!95 &1620020730
 Animator:
   serializedVersion: 5
@@ -495,7 +503,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -641,7 +649,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7373473319036854860, guid: 4afd774c5246f564ebe03b1e457cc2f7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.45
+      value: -3.438995
       objectReference: {fileID: 0}
     - target: {fileID: 7373473319036854860, guid: 4afd774c5246f564ebe03b1e457cc2f7, type: 3}
       propertyPath: m_LocalPosition.z
