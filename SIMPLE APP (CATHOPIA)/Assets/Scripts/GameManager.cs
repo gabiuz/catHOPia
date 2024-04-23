@@ -8,23 +8,25 @@ public class GameManager : MonoBehaviour
 
     public float initialGameSpeed = 5f;
     public float gameSpeedIncrease = 0.1f;
-    public float gameSpeed {  get; private set; }
+    public float gameSpeed { get; private set; }
 
     private Player player;
     private Spawner spawner;
+    private Parallax parallax; // Add a reference to Parallax
 
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
-        } else
+        }
+        else
         {
             DestroyImmediate(gameObject);
         }
     }
 
-   private void OnDestroy()
+    private void OnDestroy()
     {
         if (Instance == this)
         {
@@ -36,6 +38,7 @@ public class GameManager : MonoBehaviour
     {
         player = FindObjectOfType<Player>();
         spawner = FindObjectOfType<Spawner>();
+        parallax = FindObjectOfType<Parallax>(); // Find the Parallax component
 
         NewGame();
     }
@@ -48,7 +51,6 @@ public class GameManager : MonoBehaviour
         {
             Destroy(obstacle.gameObject);
         }
-
 
         gameSpeed = initialGameSpeed;
         enabled = true;
@@ -65,12 +67,12 @@ public class GameManager : MonoBehaviour
         player.gameObject.SetActive(false);
         spawner.gameObject.SetActive(false);
 
+        // Stop parallax movement
+        parallax.animationSpeed = 0f;
     }
 
     private void Update()
     {
         gameSpeed += gameSpeedIncrease * Time.deltaTime;
     }
-
-
 }
