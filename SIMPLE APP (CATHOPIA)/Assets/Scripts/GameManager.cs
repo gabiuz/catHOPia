@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -15,10 +16,14 @@ public class GameManager : MonoBehaviour
     public GameObject gameOverScreen;
     public Button retry;
 
+    public TextMeshProUGUI scoreText;
+
 
     private Player player;
     private Spawner spawner;
     private Parallax parallax;
+
+    private float score;
 
     private void Awake()
     {
@@ -85,5 +90,7 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         gameSpeed += gameSpeedIncrease * Time.deltaTime;
+        score += gameSpeed * Time.deltaTime;
+        scoreText.text = Mathf.FloorToInt(score).ToString("D5");
     }
 }
