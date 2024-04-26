@@ -48,6 +48,7 @@ public class Player : MonoBehaviour
         if (other.CompareTag("Obstacle"))
         {
             GameManager.Instance.GameOver();
+            audioManager.PlaySFX(audioManager.deathSound);
         }
     }
 

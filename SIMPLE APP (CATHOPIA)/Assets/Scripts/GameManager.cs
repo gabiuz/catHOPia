@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,9 +11,14 @@ public class GameManager : MonoBehaviour
     public float gameSpeedIncrease = 0.1f;
     public float gameSpeed { get; private set; }
 
+    public GameObject gameOverText;
+    public GameObject gameOverScreen;
+    public Button retry;
+
+
     private Player player;
     private Spawner spawner;
-    private Parallax parallax; // Add a reference to Parallax
+    private Parallax parallax;
 
     private void Awake()
     {
@@ -38,12 +44,12 @@ public class GameManager : MonoBehaviour
     {
         player = FindObjectOfType<Player>();
         spawner = FindObjectOfType<Spawner>();
-        parallax = FindObjectOfType<Parallax>(); // Find the Parallax component
+        parallax = FindObjectOfType<Parallax>(); 
 
         NewGame();
     }
 
-    private void NewGame()
+    public void NewGame()
     {
         Obstacle[] obstacles = FindObjectsOfType<Obstacle>();
 
@@ -57,6 +63,9 @@ public class GameManager : MonoBehaviour
 
         player.gameObject.SetActive(true);
         spawner.gameObject.SetActive(true);
+        retry.gameObject.SetActive(false);
+        gameOverScreen.SetActive(false);
+        gameOverText.SetActive(false);
     }
 
     public void GameOver()
@@ -66,8 +75,10 @@ public class GameManager : MonoBehaviour
 
         player.gameObject.SetActive(false);
         spawner.gameObject.SetActive(false);
+        retry.gameObject.SetActive(true);
+        gameOverScreen.SetActive(true);
+        gameOverText.SetActive(true);
 
-        // Stop parallax movement
         parallax.animationSpeed = 0f;
     }
 

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
+
+
     [Header("Audio Source")]
     [SerializeField] AudioSource musicSource;
     [SerializeField] AudioSource SFXSource;
@@ -11,7 +13,7 @@ public class AudioManager : MonoBehaviour
     [Header("Audio Clip")]
     public AudioClip background;
     public AudioClip jumpSound;
-    public AudioClip death;
+    public AudioClip deathSound;
 
     private void Start()
     {
@@ -19,8 +21,10 @@ public class AudioManager : MonoBehaviour
         musicSource.Play();
     }
 
+
     public void PlaySFX(AudioClip clip)
     {
         SFXSource.PlayOneShot(clip);
     }
+
 }
