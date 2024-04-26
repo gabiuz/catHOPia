@@ -17,6 +17,9 @@ public class GameManager : MonoBehaviour
     public Button retry;
 
     public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI scoreTextWord;
+    public TextMeshProUGUI scoreTextGameOver;
+    public TextMeshProUGUI scoreTextWordGameOver;
 
 
     private Player player;
@@ -71,6 +74,9 @@ public class GameManager : MonoBehaviour
         retry.gameObject.SetActive(false);
         gameOverScreen.SetActive(false);
         gameOverText.SetActive(false);
+        scoreTextGameOver.gameObject.SetActive(false);
+        scoreTextWordGameOver.gameObject.SetActive(false);
+
     }
 
     public void GameOver()
@@ -80,11 +86,17 @@ public class GameManager : MonoBehaviour
 
         player.gameObject.SetActive(false);
         spawner.gameObject.SetActive(false);
+        scoreText.gameObject.SetActive(false);
+        scoreTextWord.gameObject.SetActive(false);
         retry.gameObject.SetActive(true);
         gameOverScreen.SetActive(true);
         gameOverText.SetActive(true);
+        scoreTextWordGameOver.gameObject.SetActive(true);
+        scoreTextGameOver.gameObject.SetActive(true);
 
         parallax.animationSpeed = 0f;
+
+
     }
 
     private void Update()
@@ -92,5 +104,6 @@ public class GameManager : MonoBehaviour
         gameSpeed += gameSpeedIncrease * Time.deltaTime;
         score += gameSpeed * Time.deltaTime;
         scoreText.text = Mathf.FloorToInt(score).ToString("D5");
+        scoreTextGameOver.text = Mathf.FloorToInt(score).ToString("D5");
     }
 }
