@@ -27,4 +27,8 @@ public class AudioManager : MonoBehaviour
         SFXSource.PlayOneShot(clip);
     }
 
+    public void StopBackground()
+    {
+        musicSource.Stop();
+    }
 }

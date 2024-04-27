@@ -49,6 +49,9 @@ public class Player : MonoBehaviour
         {
             GameManager.Instance.GameOver();
             audioManager.PlaySFX(audioManager.deathSound);
+
+            audioManager.StopBackground();
+
         }
     }
 

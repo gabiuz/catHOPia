@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI scoreTextWord;
     public TextMeshProUGUI scoreTextGameOver;
     public TextMeshProUGUI scoreTextWordGameOver;
+    public TextMeshProUGUI BestScoreText;
+    public TextMeshProUGUI BestScoreTextNumber;
 
 
     private Player player;
@@ -27,6 +29,7 @@ public class GameManager : MonoBehaviour
     private Parallax parallax;
 
     private float score;
+    private float BestScore;
 
     private void Awake()
     {
@@ -76,6 +79,8 @@ public class GameManager : MonoBehaviour
         gameOverText.SetActive(false);
         scoreTextGameOver.gameObject.SetActive(false);
         scoreTextWordGameOver.gameObject.SetActive(false);
+        BestScoreText.gameObject.SetActive(false);
+        BestScoreTextNumber.gameObject.SetActive(false);
 
     }
 
@@ -93,8 +98,13 @@ public class GameManager : MonoBehaviour
         gameOverText.SetActive(true);
         scoreTextWordGameOver.gameObject.SetActive(true);
         scoreTextGameOver.gameObject.SetActive(true);
+        BestScoreText.gameObject.SetActive(true);
+        BestScoreTextNumber.gameObject.SetActive(true);
+
+        UpdateBestScore();
 
         parallax.animationSpeed = 0f;
+
 
 
     }
@@ -105,5 +115,19 @@ public class GameManager : MonoBehaviour
         score += gameSpeed * Time.deltaTime;
         scoreText.text = Mathf.FloorToInt(score).ToString("D5");
         scoreTextGameOver.text = Mathf.FloorToInt(score).ToString("D5");
+    }
+
+    private void UpdateBestScore()
+    {
+        float BestScore = PlayerPrefs.GetFloat("BestScore", 0);
+
+        if (score > BestScore)
+        {
+            BestScore = score;
+            PlayerPrefs.SetFloat("BestScore", BestScore);
+        }
+
+        BestScoreTextNumber.text = Mathf.FloorToInt(BestScore).ToString("D5");
+
     }
 }
