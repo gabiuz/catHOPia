@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e993783121c85fc498d13b2354903528, type: 3}
   m_Name: New Character Database
   m_EditorClassIdentifier: 
-  character: []
+  character:
+  - characterName: Reeses
+    characterSprite: {fileID: 21300000, guid: 240259b9e8aba064292858c0beeac0fe, type: 3}
+  - characterName: Fuji
+    characterSprite: {fileID: 21300000, guid: 01d596847c00dd548a9d8d057d9af231, type: 3}
+  - characterName: Luna
+    characterSprite: {fileID: 21300000, guid: 9c2eb3b3ba8ec6d479d5adbe1ebb1d01, type: 3}
