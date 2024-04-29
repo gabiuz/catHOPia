@@ -15,6 +15,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip jumpSound;
     public AudioClip deathSound;
 
+    private float musicTimeStamp = 0;
+
     private void Start()
     {
         musicSource.clip = background;
@@ -29,6 +31,13 @@ public class AudioManager : MonoBehaviour
 
     public void StopBackground()
     {
+        musicTimeStamp = musicSource.time;
         musicSource.Stop();
+    }
+
+    public void PlayBackground()
+    {
+        musicSource.time = musicTimeStamp;
+        musicSource.Play();
     }
 }

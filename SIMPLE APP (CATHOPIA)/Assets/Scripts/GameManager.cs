@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     public GameObject gameOverText;
     public GameObject gameOverScreen;
     public Button retry;
+    public Button exit;
+    public Button Screenshot;
 
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI scoreTextWord;
@@ -81,6 +83,8 @@ public class GameManager : MonoBehaviour
         scoreTextWordGameOver.gameObject.SetActive(false);
         BestScoreText.gameObject.SetActive(false);
         BestScoreTextNumber.gameObject.SetActive(false);
+        exit.gameObject.SetActive(false);
+        Screenshot.gameObject.SetActive(false);
 
     }
 
@@ -100,6 +104,8 @@ public class GameManager : MonoBehaviour
         scoreTextGameOver.gameObject.SetActive(true);
         BestScoreText.gameObject.SetActive(true);
         BestScoreTextNumber.gameObject.SetActive(true);
+        exit.gameObject.SetActive(true);
+        Screenshot.gameObject.SetActive(true);
 
         UpdateBestScore();
 
