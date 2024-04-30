@@ -15,6 +15,16 @@ public class CharacterManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if(!PlayerPrefs.HasKey("selectedOption"))
+        {
+            selectedOption = 0;
+        }
+
+        else
+        {
+            Load();
+        }
+
         UpdateCharacter(selectedOption);
     }
 
@@ -28,6 +38,7 @@ public class CharacterManager : MonoBehaviour
         }
 
         UpdateCharacter(selectedOption);
+        Save(); 
     }
     
     public void BackOption()
@@ -40,6 +51,7 @@ public class CharacterManager : MonoBehaviour
         }
 
         UpdateCharacter(selectedOption);
+        Save();
     }
 
     private void UpdateCharacter(int selectedOption)
@@ -47,5 +59,15 @@ public class CharacterManager : MonoBehaviour
         Character character = characterDB.GetCharacter(selectedOption);
         artworkSprite.sprite = character.characterSprite;
         nameText.text = character.characterName;    
+    }
+
+    private void Load()
+    {
+        selectedOption = PlayerPrefs.GetInt("selectedOption");
+    }
+
+    private void Save()
+    {
+        PlayerPrefs.SetInt("selectedOption", selectedOption);
     }
 }
