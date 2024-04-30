@@ -346,7 +346,7 @@ MonoBehaviour:
     spawnChance: 0.1
   minSpawnRate: 1
   maxSpawnRate: 2
-  minDistanceBetweenObjects: 2
+  minDistanceBetweenObjects: 3
 --- !u!4 &279421791
 Transform:
   m_ObjectHideFlags: 0
@@ -983,7 +983,7 @@ MonoBehaviour:
     spawnChance: 0.34
   minSpawnRate: 1
   maxSpawnRate: 2
-  minDistanceBetweenObjects: 2
+  minDistanceBetweenObjects: 3
 --- !u!1 &834460679
 GameObject:
   m_ObjectHideFlags: 0
@@ -1834,7 +1834,7 @@ MonoBehaviour:
     spawnChance: 1
   minSpawnRate: 1
   maxSpawnRate: 3
-  minDistanceBetweenObjects: 2
+  minDistanceBetweenObjects: 5
 --- !u!1 &1620020721 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2509484498319924964, guid: 4afd774c5246f564ebe03b1e457cc2f7, type: 3}
