@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class CharacterManager : MonoBehaviour
 {
-    public CharacterDataBase characterDB;
+    public CharacterDatabase characterDB;
 
     public Text nameText;
     public SpriteRenderer artworkSprite;
