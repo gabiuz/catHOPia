@@ -14,6 +14,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip background;
     public AudioClip jumpSound;
     public AudioClip deathSound;
+    public AudioClip CoinCollect;
 
     private float musicTimeStamp = 0;
 

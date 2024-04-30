@@ -59,6 +59,8 @@ public class Player : MonoBehaviour
         {
             Destroy(other.gameObject);
             coinManager.coinCount++;
+
+            audioManager.PlaySFX(audioManager.CoinCollect);
         }
     }
 
