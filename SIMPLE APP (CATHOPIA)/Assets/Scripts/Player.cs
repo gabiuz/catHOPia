@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
     public float jumpForce = 8f;
     private AudioManager audioManager;
 
+    public CoinManager coinManager;
+
 
     private void Awake()
     {
@@ -51,8 +53,14 @@ public class Player : MonoBehaviour
             audioManager.PlaySFX(audioManager.deathSound);
 
             audioManager.StopBackground();
+        }
 
+        if (other.gameObject.CompareTag("Coin"))
+        {
+            Destroy(other.gameObject);
+            coinManager.coinCount++;
         }
     }
+
 
 }
