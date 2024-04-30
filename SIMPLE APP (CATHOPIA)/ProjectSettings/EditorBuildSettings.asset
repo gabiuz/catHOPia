@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 6a3a37e71d322e44cb185dd98463f88d
   - enabled: 1
-    path: Assets/Scenes/New Game_Ginger.unity
+    path: Assets/Scenes/New Game_Reeses.unity
     guid: dcad3ec2777ad464199efda7ac6c9ca9
   - enabled: 1
     path: Assets/Scenes/How To Play.unity
