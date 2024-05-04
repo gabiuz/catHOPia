@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CharacterManager : MonoBehaviour
 {
@@ -69,5 +70,10 @@ public class CharacterManager : MonoBehaviour
     private void Save()
     {
         PlayerPrefs.SetInt("selectedOption", selectedOption);
+    }
+
+    public void ChangeScene(int sceneID)
+    {
+        SceneManager.LoadScene(sceneID);
     }
 }

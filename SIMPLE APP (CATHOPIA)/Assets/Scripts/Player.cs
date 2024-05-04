@@ -13,7 +13,6 @@ public class Player : MonoBehaviour
 
     public CoinManager coinManager;
 
-
     private void Awake()
     {
         character = GetComponent<CharacterController>();
@@ -63,6 +62,4 @@ public class Player : MonoBehaviour
             audioManager.PlaySFX(audioManager.CoinCollect);
         }
     }
-
-
 }
