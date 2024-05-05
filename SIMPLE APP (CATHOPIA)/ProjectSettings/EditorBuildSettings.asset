@@ -17,9 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Character.unity
     guid: 0a3cb31359523ce4eb8c6941313a4c5d
-  - enabled: 0
-    path: Assets/Scenes/New Game_Luna.unity
-    guid: 0396a04fa5685694bb3b8996efa2fa09
   - enabled: 1
     path: Assets/Scenes/New Game_Luna.unity
     guid: b5199c2988649d34381aac029233ed0e
