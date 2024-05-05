@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/New Game_Fuji.unity
     guid: 7c497d009a341884589486e740c35a8c
+  - enabled: 1
+    path: Assets/Scenes/Settings.unity
+    guid: e801adeb54aa65c489918cc40f81fa30
   m_configObjects: {}
