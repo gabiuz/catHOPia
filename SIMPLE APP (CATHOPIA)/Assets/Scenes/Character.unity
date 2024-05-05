@@ -280,6 +280,9 @@ GameObject:
   - component: {fileID: 174913966}
   - component: {fileID: 174913969}
   - component: {fileID: 174913970}
+  - component: {fileID: 174913973}
+  - component: {fileID: 174913972}
+  - component: {fileID: 174913971}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -415,6 +418,42 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a60dde37b3f539843ad7a3a07d086a7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &174913971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174913965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304a9beab5d98c3418bf775d555c8516, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &174913972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174913965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28d4ca15d2ab70741b1b3f9207092194, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &174913973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174913965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97a6f3b940480ca48835ce1c2cd073f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &294868940
@@ -2710,7 +2749,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1961220565}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 174913965}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1961220565
 MonoBehaviour:
   m_ObjectHideFlags: 0
