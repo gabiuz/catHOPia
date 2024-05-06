@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public Button retry;
     public Button exit;
     public Button Screenshot;
+    public Button Pause;
 
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI scoreTextWord;
@@ -24,7 +25,6 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI scoreTextWordGameOver;
     public TextMeshProUGUI BestScoreText;
     public TextMeshProUGUI BestScoreTextNumber;
-
 
     private Player player;
     private Spawner spawner;
@@ -106,6 +106,7 @@ public class GameManager : MonoBehaviour
         BestScoreTextNumber.gameObject.SetActive(true);
         exit.gameObject.SetActive(true);
         Screenshot.gameObject.SetActive(true);
+        Pause.gameObject.SetActive(false);
 
         UpdateBestScore();
 
