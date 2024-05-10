@@ -52,6 +52,7 @@ public class Player : MonoBehaviour
             audioManager.PlaySFX(audioManager.deathSound);
 
             audioManager.StopBackground();
+
         }
 
         if (other.gameObject.CompareTag("Coin"))
