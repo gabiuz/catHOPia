@@ -267,7 +267,7 @@ MonoBehaviour:
   BGmusicOff: {fileID: 0}
   musicSource: {fileID: 1663369808}
   SFXSource: {fileID: 550822975}
-  background: {fileID: 0}
+  background: {fileID: 8300000, guid: bef0cef2ded0f0645ad90c6e5bdd4965, type: 3}
   jumpSound: {fileID: 0}
   deathSound: {fileID: 0}
   CoinCollect: {fileID: 0}
