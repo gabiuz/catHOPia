@@ -64,7 +64,7 @@ public class AudioManager : MonoBehaviour
 
     public void OnButtonPress()
     {
-        if(muted == false)
+        if (muted == false)
         {
             muted = true;
             AudioListener.pause = true;
@@ -82,7 +82,7 @@ public class AudioManager : MonoBehaviour
 
     private void UpdateButtonIcon()
     {
-        if(muted == false)
+        if (muted == false)
         {
             BGmusicOn.enabled = true;
             BGmusicOff.enabled = false;
@@ -102,7 +102,7 @@ public class AudioManager : MonoBehaviour
 
     private void Save()
     {
-        PlayerPrefs.SetInt("muted", muted ? 1: 0);
+        PlayerPrefs.SetInt("muted", muted ? 1 : 0);
     }
-   
+
 }
