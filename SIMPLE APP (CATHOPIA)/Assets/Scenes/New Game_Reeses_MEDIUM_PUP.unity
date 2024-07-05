@@ -2731,7 +2731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c426548356f8839459bfc83ba7d42f0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialGameSpeed: 10
+  initialGameSpeed: 55
   gameSpeedIncrease: 1
   gameOverText: {fileID: 492729755}
   gameOverScreen: {fileID: 1610091932}
@@ -3168,7 +3168,7 @@ GameObject:
   - component: {fileID: 1954001126}
   - component: {fileID: 1954001125}
   - component: {fileID: 1954001124}
-  - component: {fileID: 1954001123}
+  - component: {fileID: 1954001128}
   m_Layer: 0
   m_Name: GROUND
   m_TagString: Untagged
@@ -3176,18 +3176,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1954001123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1954001122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec00d23b7a5b23847b8ea9eb2516bfa3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &1954001124
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3274,6 +3262,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1954001128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954001122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec00d23b7a5b23847b8ea9eb2516bfa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1974897555 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7140298684033216210, guid: 472b96c86679a234ea9bc2fbc327638a, type: 3}
