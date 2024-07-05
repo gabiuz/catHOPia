@@ -32,4 +32,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game Mode.unity
     guid: d73c50fb206d3e249b75129f1e4330c7
+  - enabled: 1
+    path: Assets/Scenes/New Game_Reeses MEDIUM_OG.unity
+    guid: b9215ca5cb716f04f85dae8d41c0a93d
+  - enabled: 1
+    path: Assets/Scenes/New Game_Reeses HARD_OG.unity
+    guid: 1ac03c3d1c077114d8981938a4ea08bc
   m_configObjects: {}
