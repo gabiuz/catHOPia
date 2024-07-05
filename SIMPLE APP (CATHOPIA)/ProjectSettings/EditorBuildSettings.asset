@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 6a3a37e71d322e44cb185dd98463f88d
   - enabled: 1
-    path: Assets/Scenes/New Game_Reeses.unity
+    path: Assets/Scenes/New Game_Reeses_EASY.unity
     guid: dcad3ec2777ad464199efda7ac6c9ca9
   - enabled: 1
     path: Assets/Scenes/How To Play.unity
@@ -18,10 +18,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Character.unity
     guid: 0a3cb31359523ce4eb8c6941313a4c5d
   - enabled: 1
-    path: Assets/Scenes/New Game_Luna.unity
+    path: Assets/Scenes/New Game_Luna_EASY.unity
     guid: b5199c2988649d34381aac029233ed0e
   - enabled: 1
-    path: Assets/Scenes/New Game_Fuji.unity
+    path: Assets/Scenes/New Game_Fuji_EASY.unity
     guid: 7c497d009a341884589486e740c35a8c
   - enabled: 1
     path: Assets/Scenes/Settings.unity
