@@ -1127,7 +1127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c426548356f8839459bfc83ba7d42f0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialGameSpeed: 80
+  initialGameSpeed: 100
   gameSpeedIncrease: 1
   gameOverText: {fileID: 1237358616}
   gameOverScreen: {fileID: 1280568269}
