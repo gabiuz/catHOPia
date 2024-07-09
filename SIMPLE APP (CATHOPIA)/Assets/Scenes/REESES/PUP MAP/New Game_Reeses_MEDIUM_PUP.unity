@@ -1556,66 +1556,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 757226951}
   m_CullTransparentMesh: 1
---- !u!1 &881359747
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 881359748}
-  - component: {fileID: 881359749}
-  m_Layer: 0
-  m_Name: Cactus Spawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &881359748
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 881359747}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -36.209534, y: -19.60359, z: -0.024956468}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1737123716}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &881359749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 881359747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d8622f29137b164ebe33cc916c40511, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objects:
-  - prefab: {fileID: 7248955348714864528, guid: 2b3f55bbd89d34b4094f6c5e9a8f1760, type: 3}
-    spawnChance: 0.2
-  - prefab: {fileID: 7248955348714864528, guid: 2b3f55bbd89d34b4094f6c5e9a8f1760, type: 3}
-    spawnChance: 0.18
-  - prefab: {fileID: 7248955348714864528, guid: 2b3f55bbd89d34b4094f6c5e9a8f1760, type: 3}
-    spawnChance: 0.16
-  - prefab: {fileID: 8436179333781252730, guid: cb0f9bc22d16bbd468c1ac161501f73a, type: 3}
-    spawnChance: 0.14
-  - prefab: {fileID: 8436179333781252730, guid: cb0f9bc22d16bbd468c1ac161501f73a, type: 3}
-    spawnChance: 0.14
-  - prefab: {fileID: 8436179333781252730, guid: cb0f9bc22d16bbd468c1ac161501f73a, type: 3}
-    spawnChance: 0.14
-  minSpawnRate: 1
-  maxSpawnRate: 2
-  minDistanceBetweenObjects: 3
 --- !u!1 &970569700
 GameObject:
   m_ObjectHideFlags: 0
@@ -3171,7 +3111,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 881359748}
+  - {fileID: 2125141420}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1802955733 stripped
@@ -3303,6 +3243,66 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2125141419
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2125141420}
+  - component: {fileID: 2125141421}
+  m_Layer: 0
+  m_Name: trashcan spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2125141420
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125141419}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -36.209534, y: -19.60359, z: -0.024956468}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1737123716}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2125141421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125141419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d8622f29137b164ebe33cc916c40511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objects:
+  - prefab: {fileID: 7591620629619631727, guid: 7023d382fce5c1b4c89c7ceb0d4943b4, type: 3}
+    spawnChance: 0.2
+  - prefab: {fileID: 7591620629619631727, guid: 7023d382fce5c1b4c89c7ceb0d4943b4, type: 3}
+    spawnChance: 0.18
+  - prefab: {fileID: 7074226230367106318, guid: 6c326c76f54c8024eb91935482e90f7d, type: 3}
+    spawnChance: 0.16
+  - prefab: {fileID: 7074226230367106318, guid: 6c326c76f54c8024eb91935482e90f7d, type: 3}
+    spawnChance: 0.14
+  - prefab: {fileID: 313231421644216759, guid: 73eea99309fd4124bb2acd57a1d2c466, type: 3}
+    spawnChance: 0.14
+  - prefab: {fileID: 8227794376491317141, guid: 36f7e951bcc328349aa1d784da629658, type: 3}
+    spawnChance: 0.14
+  minSpawnRate: 1
+  maxSpawnRate: 2
+  minDistanceBetweenObjects: 3
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
