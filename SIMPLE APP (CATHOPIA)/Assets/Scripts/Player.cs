@@ -68,6 +68,14 @@ public class Player : MonoBehaviour
             Destroy(other.gameObject);
             StartCoroutine(PowerUpRoutine());
         }
+
+        if (other.gameObject.CompareTag("Power Up 2"))
+        {
+            Destroy(other.gameObject);
+            GameManager.Instance.SetGameSpeed(10f);
+        }
+
+
     }
 
     private IEnumerator PowerUpRoutine()

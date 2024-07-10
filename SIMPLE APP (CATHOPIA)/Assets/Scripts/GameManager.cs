@@ -137,4 +137,10 @@ public class GameManager : MonoBehaviour
         BestScoreTextNumber.text = Mathf.FloorToInt(BestScore).ToString("D5");
 
     }
+    public void SetGameSpeed(float speed)
+    {
+        gameSpeed = speed;
+    }
+
+
 }
