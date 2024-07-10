@@ -38,4 +38,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/REESES/OG MAP/New Game_Reeses HARD_OG.unity
     guid: 1ac03c3d1c077114d8981938a4ea08bc
+  - enabled: 1
+    path: Assets/Scenes/WINTER/PUP MAP/New Game_Winter_EASY_PUP.unity
+    guid: ea996e0dbebbbc345bb73429c3f26628
+  - enabled: 1
+    path: Assets/Scenes/FUJI/OG MAP/New Game_Fuji MEDIUM_OG.unity
+    guid: 0800778b1fc8e6e48be350660f2313ff
+  - enabled: 1
+    path: Assets/Scenes/FUJI/OG MAP/New Game_Fuji HARD_OG.unity
+    guid: 91796c57e42059444b4b18237e08635a
+  - enabled: 1
+    path: Assets/Scenes/FUJI/BGC MAP/New Game_Fuji_EASY_BGC.unity
+    guid: 537b2768ef10a5b4abab2e76fa5212a0
+  - enabled: 1
+    path: Assets/Scenes/FUJI/BGC MAP/New Game_Fuji_MEDIUM_BGC.unity
+    guid: ad51037036e687445bf634d474d15614
+  - enabled: 1
+    path: Assets/Scenes/FUJI/BGC MAP/New Game_Fuji_HARD_BGC.unity
+    guid: 38ff702dedb53044ab6ec9e512772be8
   m_configObjects: {}
