@@ -2182,6 +2182,8 @@ GameObject:
   - component: {fileID: 1721970511}
   - component: {fileID: 1721970512}
   - component: {fileID: 1721970513}
+  - component: {fileID: 1721970515}
+  - component: {fileID: 1721970514}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2341,6 +2343,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a60dde37b3f539843ad7a3a07d086a7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1721970514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721970506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1ab757b8c34b8848ba5b8e8f08c055a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1721970515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721970506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5482df608ad1b2149868b5e69a88e928, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1734692470
@@ -3164,9 +3190,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1721970511}
-        m_TargetAssemblyTypeName: PlayGame, Assembly-CSharp
-        m_MethodName: NewGame
+      - m_Target: {fileID: 1721970514}
+        m_TargetAssemblyTypeName: OG_Hard_Winter, Assembly-CSharp
+        m_MethodName: Winter
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -2243,9 +2243,9 @@ GameObject:
   - component: {fileID: 1721970508}
   - component: {fileID: 1721970507}
   - component: {fileID: 1721970510}
-  - component: {fileID: 1721970511}
   - component: {fileID: 1721970512}
   - component: {fileID: 1721970513}
+  - component: {fileID: 1721970514}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2371,18 +2371,6 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
---- !u!114 &1721970511
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1721970506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97a6f3b940480ca48835ce1c2cd073f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1721970512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2405,6 +2393,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a60dde37b3f539843ad7a3a07d086a7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1721970514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721970506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ed990ba2d1e1734fb3cf5c073fc88b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1734692470
@@ -3111,9 +3111,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1721970511}
-        m_TargetAssemblyTypeName: PlayGame, Assembly-CSharp
-        m_MethodName: NewGame
+      - m_Target: {fileID: 1721970514}
+        m_TargetAssemblyTypeName: ReesesHardOG, Assembly-CSharp
+        m_MethodName: ReesesHOG
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
