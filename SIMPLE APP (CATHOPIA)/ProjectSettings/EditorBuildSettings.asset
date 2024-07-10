@@ -27,10 +27,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Settings.unity
     guid: e801adeb54aa65c489918cc40f81fa30
   - enabled: 1
-    path: Assets/Scenes/Themes.unity
+    path: Assets/Scenes/Themes/Themes.unity
     guid: f63d6bf8e5d3b97439a73361160b4b56
   - enabled: 1
-    path: Assets/Scenes/Game Mode.unity
+    path: Assets/Scenes/Reeses_Modes/Game Mode.unity
     guid: d73c50fb206d3e249b75129f1e4330c7
   - enabled: 1
     path: Assets/Scenes/REESES/OG MAP/New Game_Reeses MEDIUM_OG.unity
@@ -56,4 +56,160 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FUJI/BGC MAP/New Game_Fuji_HARD_BGC.unity
     guid: 38ff702dedb53044ab6ec9e512772be8
+  - enabled: 1
+    path: Assets/Scenes/REESES/BGC MAP/New Game_Reeses_EASY_BGC.unity
+    guid: 9cfb95d8190e668419f1b1979300d761
+  - enabled: 1
+    path: Assets/Scenes/REESES/BGC MAP/New Game_Reeses_MEDIUM_BGC.unity
+    guid: 5ad5ef4d060785748bd750f79f1a39a6
+  - enabled: 1
+    path: Assets/Scenes/REESES/BGC MAP/New Game_Reeses_HARD_BGC.unity
+    guid: 16a81058eb7db3f4db559a23258ad3b8
+  - enabled: 1
+    path: Assets/Scenes/Reeses_Modes/BGC_Modes.unity
+    guid: b00b2d4a108318946a4b31de72d3dc42
+  - enabled: 1
+    path: Assets/Scenes/REESES/PUP MAP/New Game_Reeses_EASY_PUP.unity
+    guid: 830615f0ef47bc44487f82958f3c5ddd
+  - enabled: 1
+    path: Assets/Scenes/REESES/PUP MAP/New Game_Reeses_MEDIUM_PUP.unity
+    guid: c26bc23c720115c4fa5d3e70cf8bfbe1
+  - enabled: 1
+    path: Assets/Scenes/REESES/PUP MAP/New Game_Reeses_HARD_PUP.unity
+    guid: 917e57d013cc4c04ab86c58a041496d5
+  - enabled: 1
+    path: Assets/Scenes/Reeses_Modes/PUP_Modes.unity
+    guid: 8eec8b3f78cebb94d83c7ab9b9470084
+  - enabled: 1
+    path: Assets/Scenes/Themes/Themes_Fuji.unity
+    guid: cbf866eeb5b64864abe228044fd8d6e2
+  - enabled: 1
+    path: Assets/Scenes/Themes/Themes_Luna.unity
+    guid: 3103f4adce7dcc24588ba635197a458b
+  - enabled: 1
+    path: Assets/Scenes/Themes/Themes_Soju.unity
+    guid: c11e7c7c286f56548886e263d18132e5
+  - enabled: 1
+    path: Assets/Scenes/Themes/Themes_Winter.unity
+    guid: 568ccce183858bc46aa5431c8bd40ca7
+  - enabled: 1
+    path: Assets/Scenes/Fuji_Modes/Fuji_OG.unity
+    guid: 527ff7f9af719ec4da549ce9b03f921e
+  - enabled: 1
+    path: Assets/Scenes/Fuji_Modes/Fuji_BGC.unity
+    guid: 4fe1f58c44a0c544e8f51683df405ca3
+  - enabled: 1
+    path: Assets/Scenes/Fuji_Modes/Fuji_PUP.unity
+    guid: 5e3794c7a4e922740a0ee21f3d7d997c
+  - enabled: 1
+    path: Assets/Scenes/FUJI/PUP MAP/New Game_Fuji_EASY_PUP.unity
+    guid: 5685c803abc438d48863114b7b6975f3
+  - enabled: 1
+    path: Assets/Scenes/FUJI/PUP MAP/New Game_Fuji_MEDIUM_PUP.unity
+    guid: e106962b05bb4a543a921653a3bcd8ba
+  - enabled: 1
+    path: Assets/Scenes/FUJI/PUP MAP/New Game_Fuji_HARD_PUP.unity
+    guid: 9881cb80332ca904f96bd75fcad4942c
+  - enabled: 1
+    path: Assets/Scenes/Luna_Modes/Luna_OG.unity
+    guid: 6774ea21ab08f4044a22f97d907427ab
+  - enabled: 1
+    path: Assets/Scenes/Luna_Modes/Luna_BGC.unity
+    guid: bbf0f59179f365445ab967cfc95feed7
+  - enabled: 1
+    path: Assets/Scenes/Luna_Modes/Luna_PUP.unity
+    guid: c69d2b08e6dce8d4592da19b0fe90d3b
+  - enabled: 1
+    path: Assets/Scenes/LUNA/OG MAP/New Game_Luna MEDIUM_OG.unity
+    guid: 9fdad72f366107d4f9f5be6239b32a4e
+  - enabled: 1
+    path: Assets/Scenes/LUNA/OG MAP/New Game_Luna HARD_OG.unity
+    guid: 7f106238f1f4c3d49b1089e74ff41efa
+  - enabled: 1
+    path: Assets/Scenes/LUNA/BGC MAP/New Game_Luna_EASY_BGC.unity
+    guid: 0714d3a8f9ddbcd44a0a3b980251d8a0
+  - enabled: 1
+    path: Assets/Scenes/LUNA/BGC MAP/New Game_Luna_MEDIUM_BGC.unity
+    guid: 8a6092f9179f9594fb3fa508b802382d
+  - enabled: 1
+    path: Assets/Scenes/LUNA/BGC MAP/New Game_Luna_HARD_BGC.unity
+    guid: b59cf39066d6578418cc3bd31c6811e6
+  - enabled: 1
+    path: Assets/Scenes/LUNA/PUP MAP/New Game_Luna_EASY_PUP.unity
+    guid: 3d9e64e74a67b134f8d99bc5c6d8188e
+  - enabled: 1
+    path: Assets/Scenes/LUNA/PUP MAP/New Game_Luna_MEDIUM_PUP.unity
+    guid: 7eeec2cb39fc16f448b49ba2563700ed
+  - enabled: 1
+    path: Assets/Scenes/LUNA/PUP MAP/New Game_Luna_HARD_PUP.unity
+    guid: 84163aa1ac72f6a4ba3ef5c03ec90d66
+  - enabled: 1
+    path: Assets/Scenes/Winter_Modes/Winter_BGC.unity
+    guid: 47c64c057c693eb4483365c17b56fb17
+  - enabled: 1
+    path: Assets/Scenes/Winter_Modes/Winter_OG.unity
+    guid: f0f2d1b88e8d1cf4dae813d0be51167a
+  - enabled: 1
+    path: Assets/Scenes/Winter_Modes/Winter_PUP.unity
+    guid: 20b5e98c307d03e409ce3849aea4a21f
+  - enabled: 1
+    path: Assets/Scenes/Soju_Modes/Soju_BGC.unity
+    guid: 9149c3c5c00b0034582d7659560b52ce
+  - enabled: 1
+    path: Assets/Scenes/Soju_Modes/Soju_OG.unity
+    guid: 3eb6c963de827294a8f06706dd0177af
+  - enabled: 1
+    path: Assets/Scenes/Soju_Modes/Soju_PUP.unity
+    guid: 9a89f4b784993de4ab50749d05ae8c98
+  - enabled: 1
+    path: Assets/Scenes/WINTER/OG MAP/New Game_Winter_EASY_OG.unity
+    guid: 613204f01f767ff478567d89d5ab2ce9
+  - enabled: 1
+    path: Assets/Scenes/WINTER/OG MAP/New Game_Winter_MEDIUM_OG.unity
+    guid: cfde0a18ecfbcf440b40a6e0b126f23d
+  - enabled: 1
+    path: Assets/Scenes/WINTER/OG MAP/New Game_Winter_HARD_OG.unity
+    guid: 5993695226be70d42833e93d13ebc5b8
+  - enabled: 1
+    path: Assets/Scenes/WINTER/BGC MAP/New Game_Winter_EASY_BGC.unity
+    guid: abc228b220591ca489a75cd7ca4fe18e
+  - enabled: 1
+    path: Assets/Scenes/WINTER/BGC MAP/New Game_Winter_MEDIUM_BGC.unity
+    guid: a1c677e766b29b244951eb0f36a5e927
+  - enabled: 1
+    path: Assets/Scenes/WINTER/BGC MAP/New Game_Winter_HARD_BGC.unity
+    guid: 85f56f2462ae8964f91ac4821ce24030
+  - enabled: 1
+    path: Assets/Scenes/WINTER/PUP MAP/New Game_Winter_MEDIUM_PUP.unity
+    guid: 9020eb7294a073b4eb3633285c83b7de
+  - enabled: 1
+    path: Assets/Scenes/WINTER/PUP MAP/New Game_Winter_HARD_PUP.unity
+    guid: 10b145e14695fae4986b2ba391735ac8
+  - enabled: 1
+    path: Assets/Scenes/SOJU/OG MAP/New Game_Soju_EASY_OG.unity
+    guid: b7711493a4512984eb625423fa9f19d3
+  - enabled: 1
+    path: Assets/Scenes/SOJU/OG MAP/New Game_Soju_MEDIUM_OG.unity
+    guid: f6f85b98e87460244903d050defff024
+  - enabled: 1
+    path: Assets/Scenes/SOJU/OG MAP/New Game_Soju_HARD_OG.unity
+    guid: 543384b8cc5d387489c7b140c81a66e2
+  - enabled: 1
+    path: Assets/Scenes/SOJU/BGC MAP/New Game_Soju_EASY_BGC.unity
+    guid: b3f60a16ea3b4db4ab4bc83adf4d8974
+  - enabled: 1
+    path: Assets/Scenes/SOJU/BGC MAP/New Game_Soju_MEDIUM_BGC.unity
+    guid: 3b03deb2014276149bc102be2a1d3753
+  - enabled: 1
+    path: Assets/Scenes/SOJU/BGC MAP/New Game_Soju_HARD_BGC.unity
+    guid: 9f1199b5fba48e44eb72acc4bf0da2c8
+  - enabled: 1
+    path: Assets/Scenes/SOJU/PUP MAP/New Game_Soju_EASY_PUP.unity
+    guid: 4cda3f65ab1de284490faf6b71d9b449
+  - enabled: 1
+    path: Assets/Scenes/SOJU/PUP MAP/New Game_Soju_MEDIUM_PUP.unity
+    guid: 43685091eba13b74ca596799d7711e3f
+  - enabled: 1
+    path: Assets/Scenes/SOJU/PUP MAP/New Game_Soju_HARD_PUP.unity
+    guid: e3673a01949510841a89b32d250954b8
   m_configObjects: {}

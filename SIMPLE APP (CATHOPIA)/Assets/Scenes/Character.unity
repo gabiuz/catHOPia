@@ -315,9 +315,11 @@ GameObject:
   - component: {fileID: 174913969}
   - component: {fileID: 174913970}
   - component: {fileID: 174913973}
-  - component: {fileID: 174913972}
-  - component: {fileID: 174913971}
   - component: {fileID: 174913974}
+  - component: {fileID: 174913975}
+  - component: {fileID: 174913978}
+  - component: {fileID: 174913976}
+  - component: {fileID: 174913977}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -455,30 +457,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a60dde37b3f539843ad7a3a07d086a7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &174913971
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 174913965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 304a9beab5d98c3418bf775d555c8516, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &174913972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 174913965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28d4ca15d2ab70741b1b3f9207092194, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &174913973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -501,6 +479,54 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6bc451eedd8d65541bd079a5b3896147, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &174913975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174913965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19bfc03ce5c3d4b4590c1a51576a8166, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &174913976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174913965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 658a805530fa81f439d85db0b333da08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &174913977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174913965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70d49629e66403c45abaf9d81d26488e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &174913978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174913965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8860357b181339742baf4ea2d1dea8c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &294868940
@@ -1474,9 +1500,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 174913974}
-        m_TargetAssemblyTypeName: Themes, Assembly-CSharp
-        m_MethodName: Th_eme
+      - m_Target: {fileID: 174913977}
+        m_TargetAssemblyTypeName: Winter_Themes, Assembly-CSharp
+        m_MethodName: Themes
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1640,9 +1666,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 174913974}
-        m_TargetAssemblyTypeName: Themes, Assembly-CSharp
-        m_MethodName: Th_eme
+      - m_Target: {fileID: 174913976}
+        m_TargetAssemblyTypeName: Soju_Themes, Assembly-CSharp
+        m_MethodName: Themes
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1826,9 +1852,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 174913974}
-        m_TargetAssemblyTypeName: Themes, Assembly-CSharp
-        m_MethodName: Th_eme
+      - m_Target: {fileID: 174913975}
+        m_TargetAssemblyTypeName: Fuji_Themes, Assembly-CSharp
+        m_MethodName: Themes
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2245,9 +2271,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 174913974}
-        m_TargetAssemblyTypeName: Themes, Assembly-CSharp
-        m_MethodName: Th_eme
+      - m_Target: {fileID: 174913978}
+        m_TargetAssemblyTypeName: Luna_Themes, Assembly-CSharp
+        m_MethodName: Themes
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
