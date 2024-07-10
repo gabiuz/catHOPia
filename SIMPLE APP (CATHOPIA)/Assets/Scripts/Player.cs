@@ -12,6 +12,8 @@ public class Player : MonoBehaviour
     private AudioManager audioManager;
 
     public CoinManager coinManager;
+    private bool hasPowerUp = false;
+    public float powerUpDuration = 5f; // Duration of the power-up effect in seconds
 
     private void Awake()
     {
@@ -23,8 +25,6 @@ public class Player : MonoBehaviour
     {
         direction = Vector3.zero;
     }
-
-
 
     private void Update()
     {
@@ -48,19 +48,33 @@ public class Player : MonoBehaviour
     {
         if (other.CompareTag("Obstacle"))
         {
-            GameManager.Instance.GameOver();
-            audioManager.PlaySFX(audioManager.deathSound);
-
-            audioManager.StopBackground();
-
+            if (!hasPowerUp)
+            {
+                GameManager.Instance.GameOver();
+                audioManager.PlaySFX(audioManager.deathSound);
+                audioManager.StopBackground();
+            }
         }
 
         if (other.gameObject.CompareTag("Coin"))
         {
             Destroy(other.gameObject);
             coinManager.coinCount++;
-
             audioManager.PlaySFX(audioManager.CoinCollect);
         }
+
+        if (other.gameObject.CompareTag("Power Up"))
+        {
+            Destroy(other.gameObject);
+            StartCoroutine(PowerUpRoutine());
+        }
+    }
+
+    private IEnumerator PowerUpRoutine()
+    {
+        hasPowerUp = true;
+        yield return new WaitForSeconds(powerUpDuration);
+        hasPowerUp = false;
     }
 }
+
